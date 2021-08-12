@@ -43,7 +43,7 @@ import android.service.notification.StatusBarNotification;
 import android.os.Build;
 
 import java.util.List;
-import java.util.Random;
+import java.util.SecureRandom;
 
 import de.appplant.cordova.plugin.notification.action.Action;
 
@@ -63,7 +63,7 @@ public final class Builder {
     private final Options options;
 
     // To generate unique request codes
-    private final Random random = new Random();
+    private final Random random = new SecureRandom();
 
     // Receiver to handle the clear event
     private Class<?> clearReceiver;
