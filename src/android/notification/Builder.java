@@ -63,7 +63,7 @@ public final class Builder {
     private final Options options;
 
     // To generate unique request codes
-    private final Random random = new SecureRandom();
+    private final SecureRandom random = new SecureRandom();
 
     // Receiver to handle the clear event
     private Class<?> clearReceiver;
